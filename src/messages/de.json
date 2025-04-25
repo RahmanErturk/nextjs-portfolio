@@ -1,0 +1,38 @@
+{
+    "navigation": {
+      "home": "Startseite",
+      "about": "Über mich",
+      "projects": "Projekte",
+      "skills": "Fähigkeiten",
+      "contact": "Kontakt",
+      "language": "Sprache",
+      "theme": "Thema",
+      "fontSize": "Schriftgröße"
+    },
+    "home": {
+      "title": "Willkommen zu meinem Portfolio",
+      "subtitle": "Eine Ausstellung meiner Arbeiten als Entwickler und Designer"
+    },
+    "about": {
+      "title": "Über mich",
+      "description": "Ich bin ein leidenschaftlicher Entwickler und Designer mit Fokus auf barrierefreie und moderne Web-Erlebnisse."
+    },
+    "projects": {
+      "title": "Meine Projekte",
+      "description": "Eine Sammlung meiner neuesten Arbeiten und Projekte."
+    },
+    "skills": {
+      "title": "Meine Fähigkeiten",
+      "description": "Technologien und Werkzeuge, in denen ich spezialisiert bin."
+    },
+    "contact": {
+      "title": "Kontakt aufnehmen",
+      "description": "Kontaktieren Sie mich gerne für Kooperationen oder Anfragen."
+    },
+    "accessibility": {
+      "switchLanguage": "Sprache wechseln",
+      "switchTheme": "Thema wechseln",
+      "increaseFontSize": "Schriftgröße erhöhen",
+      "decreaseFontSize": "Schriftgröße verringern"
+    }
+}

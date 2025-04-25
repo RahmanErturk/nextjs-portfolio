@@ -1,0 +1,38 @@
+{
+    "navigation": {
+      "home": "Ana Sayfa",
+      "about": "Hakkımda",
+      "projects": "Projeler",
+      "skills": "Yetenekler",
+      "contact": "İletişim",
+      "language": "Dil",
+      "theme": "Tema",
+      "fontSize": "Yazı Tipi Boyutu"
+    },
+    "home": {
+      "title": "Portföyüme Hoş Geldiniz",
+      "subtitle": "Geliştirici ve tasarımcı olarak çalışmalarımın bir vitrini"
+    },
+    "about": {
+      "title": "Hakkımda",
+      "description": "Erişilebilir ve modern web deneyimleri oluşturmaya odaklanan tutkulu bir geliştirici ve tasarımcıyım."
+    },
+    "projects": {
+      "title": "Projelerim",
+      "description": "Son çalışmalarım ve projelerimden bir koleksiyon."
+    },
+    "skills": {
+      "title": "Yeteneklerim",
+      "description": "Uzmanlaştığım teknolojiler ve araçlar."
+    },
+    "contact": {
+      "title": "İletişime Geç",
+      "description": "İşbirlikleri veya sorular için benimle iletişime geçmekten çekinmeyin."
+    },
+    "accessibility": {
+      "switchLanguage": "Dil değiştir",
+      "switchTheme": "Tema değiştir",
+      "increaseFontSize": "Yazı tipi boyutunu artır",
+      "decreaseFontSize": "Yazı tipi boyutunu azalt"
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact",
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size"
+    },
+    "home": {
+      "title": "Welcome to My Portfolio",
+      "subtitle": "A showcase of my work as a developer and designer"
+    },
+    "about": {
+      "title": "About Me",
+      "description": "I am a passionate developer and designer with a focus on creating accessible and modern web experiences."
+    },
+    "projects": {
+      "title": "My Projects",
+      "description": "A collection of my recent works and projects."
+    },
+    "skills": {
+      "title": "My Skills",
+      "description": "Technologies and tools I specialize in."
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "description": "Feel free to reach out for collaborations or inquiries."
+    },
+    "accessibility": {
+      "switchLanguage": "Switch language",
+      "switchTheme": "Switch theme",
+      "increaseFontSize": "Increase font size",
+      "decreaseFontSize": "Decrease font size"
+    }
+}
