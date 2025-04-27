@@ -3,6 +3,8 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {routing} from '@/i18n/routing';
 import { ThemeProvider } from 'next-themes';
 import { Inter } from 'next/font/google';
+import { FontSizeProvider } from '@/context/FontSizeContext';
+import FontSizeWrapper from '@/components/FontSizeWrapper';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -26,7 +28,9 @@ export default async function LocaleLayout({
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
+            <FontSizeProvider>
+              <FontSizeWrapper>{children}</FontSizeWrapper>
+            </FontSizeProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

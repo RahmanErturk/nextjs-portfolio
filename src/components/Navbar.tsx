@@ -5,11 +5,14 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useFontSize } from '../context/FontSizeContext';
 
 const Navbar = () => {
   const t = useTranslations('navigation');
+  const ta = useTranslations('accessibility');
   const locale = useLocale();
   const { setTheme, theme } = useTheme();
+  const { fontSize, increaseFontSize, decreaseFontSize } = useFontSize();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -62,12 +65,12 @@ const Navbar = () => {
             </motion.li>
           ))}
         </ul>
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-4 items-center">
           <select
             onChange={(e) => window.location.assign(`/${e.target.value}`)}
             value={locale}
             className="bg-secondary text-white p-2 rounded"
-            aria-label={t('switchLanguage')}
+            aria-label={ta('switchLanguage')}
           >
             <option value="en">English</option>
             <option value="de">Deutsch</option>
@@ -77,12 +80,30 @@ const Navbar = () => {
             onChange={(e) => setTheme(e.target.value)}
             value={theme}
             className="bg-secondary text-white p-2 rounded"
-            aria-label={t('switchTheme')}
+            aria-label={ta('switchTheme')}
           >
             <option value="system">System</option>
             <option value="light">Light</option>
             <option value="dark">Dark</option>
           </select>
+          <div className="flex space-x-2">
+            <button
+              onClick={decreaseFontSize}
+              className="bg-secondary text-white p-2 rounded"
+              aria-label={ta('decreaseFontSize')}
+              disabled={fontSize === 'sm'}
+            >
+              A-
+            </button>
+            <button
+              onClick={increaseFontSize}
+              className="bg-secondary text-white p-2 rounded"
+              aria-label={ta('increaseFontSize')}
+              disabled={fontSize === 'xl'}
+            >
+              A+
+            </button>
+          </div>
         </div>
       </div>
     </nav>
