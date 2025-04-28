@@ -24,7 +24,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-primary text-white p-4 sticky top-0 z-50" aria-label="Main navigation">
+    <nav className="bg-primary text-primary-foreground p-4 sticky top-0 z-50" aria-label="Main navigation">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold" aria-label="Portfolio Home">
           Portfolio
@@ -58,7 +58,7 @@ const Navbar = () => {
             >
               <Link
                 href={`/${locale}${item.href}`}
-                className="block py-2 px-4 hover:bg-secondary rounded focus:outline-none focus:ring-2 focus:ring-accent"
+                className="block py-2 px-4 hover:bg-secondary hover:text-secondary-foreground rounded focus:outline-none focus:ring-2 focus:ring-accent"
               >
                 {item.label}
               </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
           <select
             onChange={(e) => window.location.assign(`/${e.target.value}`)}
             value={locale}
-            className="bg-secondary text-white p-2 rounded"
+            className="bg-secondary text-secondary-foreground p-2 rounded"
             aria-label={ta('switchLanguage')}
           >
             <option value="en">English</option>
@@ -78,8 +78,8 @@ const Navbar = () => {
           </select>
           <select
             onChange={(e) => setTheme(e.target.value)}
-            value={theme}
-            className="bg-secondary text-white p-2 rounded"
+            value={theme || 'system'}
+            className="bg-secondary text-secondary-foreground p-2 rounded"
             aria-label={ta('switchTheme')}
           >
             <option value="system">System</option>
@@ -89,7 +89,7 @@ const Navbar = () => {
           <div className="flex space-x-2">
             <button
               onClick={decreaseFontSize}
-              className="bg-secondary text-white p-2 rounded"
+              className="bg-secondary text-secondary-foreground p-2 rounded"
               aria-label={ta('decreaseFontSize')}
               disabled={fontSize === 'sm'}
             >
@@ -97,7 +97,7 @@ const Navbar = () => {
             </button>
             <button
               onClick={increaseFontSize}
-              className="bg-secondary text-white p-2 rounded"
+              className="bg-secondary text-secondary-foreground p-2 rounded"
               aria-label={ta('increaseFontSize')}
               disabled={fontSize === 'xl'}
             >
