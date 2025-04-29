@@ -13,14 +13,14 @@ export default function About() {
       <AnimatePresence mode="wait">
         <motion.main
           key="about"
-          className="flex min-h-screen flex-col items-center justify-center p-4"
+          className="flex min-h-screen flex-col items-center justify-center p-4 bg-background"
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.5 }}
         >
           <motion.h1
-            className="text-4xl font-bold"
+            className="text-4xl font-bold text-primary"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -28,7 +28,7 @@ export default function About() {
             {t('title')}
           </motion.h1>
           <motion.p
-            className="mt-4 text-lg"
+            className="mt-4 text-lg text-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
